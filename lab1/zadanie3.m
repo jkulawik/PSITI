@@ -4,13 +4,9 @@ fx1 = 1000; % [Hz]
 fx2 = 2000; % [Hz]
 
 % Oœ pozioma (czas)
-fs = 6000; % Czêst. próbkowania [Hz]
+fs = 12000; % Czêst. próbkowania [Hz]
 t_step = 1/fs;
 t = 0:t_step:2;
-
-l = length(t);
-% Deklaracja macierzy o d³. l
-swe(l);
 
 % Do pierwszej sekundy wpisywana jest fx1
 % Po niej, fx2
@@ -22,6 +18,6 @@ for i=1:1:l
     end
 end
 
-cwt(swe, 'amor'); % amor oznacza falkê Gabora
+cwt(swe, 'amor', fs); % amor oznacza falkê Gabora
 
 

@@ -4,8 +4,9 @@ f = 2;
 fx = f*10; % [Hz]
 
 % Oœ pozioma (czas)
-t_step = 1e-3;
-fs = 1/t_step; % Czêst. próbkowania
+fs = 1000; % Czêst. próbkowania
+% Uwaga! W spektrogramach i cwt zakres czêst. na wykresie = fs/2
+t_step = 1/fs;
 t = 0:t_step:2;
 
 % Sygna³ wejœciowy
