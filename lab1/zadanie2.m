@@ -1,4 +1,3 @@
-
 % CWT = continuous wavelet transform
 
 % Parametry wejœciowe
@@ -10,6 +9,8 @@ fx = f*10; % [Hz]
 t_step = 1e-3;
 fs = 1/t_step; % Czêst. próbkowania
 t = 0:t_step:2;
+
+% UWAGA - zadanie niedokoñczone, niewiadomo o co chodzi
 
 n = 3; % Liczba realizacji
 

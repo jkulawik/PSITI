@@ -8,7 +8,7 @@ fs = 12000; % Czêst. próbkowania [Hz]
 t_step = 1/fs;
 t = 0:t_step:2;
 
-% Do pierwszej sekundy wpisywana jest fx1
+% Do up³yniêcia pierwszej sekundy do swe wpisywana jest fx1
 % Po niej, fx2
 for i=1:1:l
     if(t(i) < 1)
