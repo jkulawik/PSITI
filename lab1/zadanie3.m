@@ -1,11 +1,11 @@
 % Parametry wejœciowe
 A = 3;
-fx1 = 100; % [Hz]
-fx2 = 200; % [Hz]
+fx1 = 1000; % [Hz]
+fx2 = 2000; % [Hz]
 
 % Oœ pozioma (czas)
-t_step = 1e-3;
-fs = 1/t_step; % Czêst. próbkowania
+fs = 6000; % Czêst. próbkowania [Hz]
+t_step = 1/fs;
 t = 0:t_step:2;
 
 l = length(t);
@@ -21,8 +21,8 @@ end
 
 %plot(t, swe);
 
-L = 128; % D³ugoœæ okna, wp³ywa na rozdzielczoœæ i dok³adnoœæ
-overlap = 120; % Musi byæ mniejsze od L
+L = 128;
+overlap = 120;
 freq_res = 128*4; % Rozdzielczoœæ czêst.
 spectrogram(swe, L, overlap, freq_res, fs);
 

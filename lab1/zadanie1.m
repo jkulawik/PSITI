@@ -13,7 +13,7 @@ swe = A*sin(2*pi*fx*t);
 %plot(t, swe); % Podgl¹d sygna³u
 
 % Ustawienia spektrogramów
-L = 128*4; % D³ugoœæ okna, wp³ywa na rozdzielczoœæ i dok³adnoœæ
+L = 128*4; % D³ugoœæ okna, im wiêksza tym lepiej widaæ moc sygna³u a gorzej czas
 overlap = 120; % Musi byæ mniejsze od L
 freq_res = 128*2; % Rozdzielczoœæ czêst.
 
