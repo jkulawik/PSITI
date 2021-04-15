@@ -19,15 +19,15 @@ freq_res = 128*2; % Rozdzielczoœæ czêst.
 
 % Okno prostok¹tne
 figure(1);
-spectrogram( swe, rectwin(L), overlap, freq_res, fs);
+spectrogram(swe, rectwin(L), overlap, freq_res, fs);
 title('Okno prostok¹tne')
 
 % Okno Hanna
 figure(2);
-spectrogram( swe, hann(L), overlap, freq_res, fs);
+spectrogram(swe, hann(L), overlap, freq_res, fs);
 title('Okno Hanna')
 
 % Okno Hamminga
 figure(3);
-spectrogram( swe, hamming(L), overlap, freq_res, fs);
+spectrogram(swe, hamming(L), overlap, freq_res, fs);
 title('Okno Hamminga')
