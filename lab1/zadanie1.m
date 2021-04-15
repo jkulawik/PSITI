@@ -15,7 +15,7 @@ swe = A*sin(2*pi*fx*t);
 
 % Ustawienia spektrogramów
 L = 128*4; % D³ugoœæ okna, im wiêksza tym lepiej widaæ moc sygna³u a gorzej czas
-overlap = 120; % Musi byæ mniejsze od L
+overlap = 120; % Musi byæ mniejsze od L, im wiêksze tym ³adniejszy wykres
 freq_res = 128*2; % Rozdzielczoœæ czêst.
 
 % Okno prostok¹tne

@@ -20,4 +20,5 @@ end
 
 cwt(swe, 'amor', fs); % amor oznacza falkê Gabora
 
+%cqt(swe, 'SamplingFrequency', fs);
 
