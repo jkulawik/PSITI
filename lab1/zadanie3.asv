@@ -12,8 +12,7 @@ l = length(t);
 % Deklaracja macierzy o d³. l
 swe(l);
 
-% Do pierwszej sekundy wpisywana jest fx1
-% Po niej, fx2
+% 
 for i=1:1:l
     if(t(i) < 1)
         swe(i) = A*sin(2*pi*fx1*t(i));
