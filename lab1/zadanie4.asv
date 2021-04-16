@@ -1,0 +1,18 @@
+load handel.mat
+
+[y, Fs]=audioread('zad4.wav'); % Read wave file
+sound(y,Fs)
+
+t = 0:seconds(1/Fs):seconds(info.Duration);
+t = t(1:end-1);
+
+% sound(y, fs); % Playback
+% left=y(:,1); % Left channel
+% right=y(:,2); % Right channel
+% subplot(2,1,1), plot((1:length(left))/fs, left);
+% subplot(2,1,2), plot((1:length(right))/fs, right);
+
+
+    
+% cqt(y, fs)
+
