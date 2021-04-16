@@ -18,8 +18,12 @@ left=y(:,1); % Left channel
 right=y(:,2); % Right channel
 figure(1);
 plot((1:length(left))/Fs, left);
+title('Speech signal')
+xlabel('Time (secs)');
+ylabel('Audio Signal (left channel)');
 %figure(2);
 %plot((1:length(right))/Fs, right);  
 figure(3);
-cqt(left)
+cqt(left, 'SamplingFrequency', Fs);
+
 
